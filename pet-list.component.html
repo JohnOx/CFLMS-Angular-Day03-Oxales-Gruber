@@ -1,0 +1,15 @@
+<h1>Available Pets</h1>
+<div *ngFor="let pet of pets; index as petId">
+
+    <h3>
+        <a [routerLink]="['/pets', petId]">
+        {{pet.type}}</a><br>
+    </h3>
+
+    <!-- <p *ngIf="pet.breed">
+        Breed: {{ pet.breed }}<br>
+     </p>
+
+     Age: {{ pet.age }}
+ -->
+</div>
